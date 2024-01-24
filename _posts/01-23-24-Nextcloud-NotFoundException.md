@@ -1,5 +1,5 @@
 ---
-title: 01-23-24-Nextcloud-NotFoundException
+title: Nextcloud-NotFoundException
 date: 2024-01-23 20:55:00 +0500
 categories:
   - nextcloud

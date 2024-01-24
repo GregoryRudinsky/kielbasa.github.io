@@ -14,7 +14,7 @@ timezone: America/New_York
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Docs # the main title
+title: Kielbasa Docs # the main title
 
 tagline: homelab docs # it will display as the sub-title
 
