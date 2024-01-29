@@ -1,56 +1,54 @@
-# Chirpy Starter
+# Docs README
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+`v0.1`
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
-
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
-
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
-
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
-```
-
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
-
-## Prerequisites
-
-Follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of
-the basic environment. [Git](https://git-scm.com/) also needs to be installed.
-
-## Installation
-
-Sign in to GitHub and [**use this template**][use-template] to generate a brand new repository and name it
-`USERNAME.github.io`, where `USERNAME` represents your GitHub username.
-
-Then clone it to your local machine and run:
-
-```console
-$ bundle
-```
-
-## Usage
+The goal of this space is to create an archive for my Homelab notes and projects. It is my hope that a `Polak` from the future can benefit from my experiences. This is also my first attempt at maintaining a website. I cloned the theme from a glorious dev. 
 
 Please see the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy#documentation).
 
-## License
+```text
+Roundabout February 2022 I installed OpenWRT on a forgettable Netgear GS105Ev2 router. That was the catalyst into a fantastic obsession with technology. Eventually I learned the hip kids on Reddit referred to this as a Homelab. And since I've realized that I have accomplished quite a bit, learned a little and have broken even more. 
 
-This work is published under [MIT][mit] License.
+I wish I had documented my initial endevours from the early days. I could use a chuckle. 
+```
 
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[use-template]: https://github.com/cotes2020/chirpy-starter/generate
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+---
+
+# Gear
+
+Protectli FW4B
+- pfSense
+
+Server(s)
+- Unraid 6.12.6 
+  - MSI MAG Z790 DDR4 | 12th Gen i5-12600K | 64GB | 16TB Array - 4TB Cache | Radeon rx580
+- Unraid 6.12.4 
+  - HP z240 SFF  |  Xeon E3-1240 v5 @ 3.50GHz  | 16GB  | 4TB Array - 2TB Cache  | AMD Firepro 2100
+
+Zimaboard
+- 232 
+  - Testbed for hosted services
+
+# Services
+
+```
+omada-controller
+netdata
+dashy
+binhex-sabnzbdvpn
+cadvisor
+mariadb_nextcloud
+readarr
+nextcloud
+Ombi
+binhex-qbittorrentvpn
+prowlarr
+Nginx-Proxy-Manager-Official
+binhex-krusader
+lidarr
+radarr
+binhex-emby
+sonarr
+binhex-delugevpn
+jellyseerr
+```
