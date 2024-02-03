@@ -5,4 +5,4 @@ categories: [homelab, documentation]
 tags: [docs]
 ---
 
-Men may known to buy a motorcycle in the midst of their midlife crisis. I'm learning how to build a homelab. The goal of this space is to create an archive for my Homelab notes and projects. 
+Some men will buy a motorcycle in the midst of their midlife crisis. I'm learning how to build a homelab. The goal of this space is to create an archive for my Homelab notes and projects. 
