@@ -14,7 +14,9 @@ Venturing into these unfamiliar territories and posing questions in such arenas 
 
 Unexpectedly, my niche hobby has not only provided personal fulfillment but has also unexpectedly advanced my career. 
 
-This forum is evolving. I aim to share my experiences with the hope that they can be beneficial to someone who is just starting out. 
+<br><br>
 
 *Should you discover any of my posts helpful, I encourage you to pay it forward and share your own knowledge.*
 
+
+This forum is evolving. 
