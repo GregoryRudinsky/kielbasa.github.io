@@ -1,8 +1,8 @@
 ---
-# the default layout is 'page'
-icon: fas fa-info-circle
-order: 4
+title: About
+date: 2024-02-02 09:55:00 +0500 # date-time-offset est=+5
+categories: [homelab, documentation]
+tags: [docs]
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+Men may known to buy a motorcycle in the midst of their midlife crisis. I'm learning how to build a homelab. The goal of this space is to create an archive for my Homelab notes and projects. 
