@@ -2,9 +2,9 @@
 
 `v0.1`
 
-The goal of this space is to create an archive for my Homelab notes and projects. 
+I started a homelab somehwere in 2022 and quickly realized the value documenting things. The goal of this space is to create an archive for my Homelab notes and projects. 
 
-It is my hope that a `Polak` from the future can benefit from my experiences. [gregoryrudinsky.github.io](https://gregoryrudinsky.github.io)
+[gregoryrudinsky.github.io](https://gregoryrudinsky.github.io)
 
 
 
@@ -32,24 +32,3 @@ Zimaboard
 
 # Services
 
-```
-omada-controller
-netdata
-dashy
-binhex-sabnzbdvpn
-cadvisor
-mariadb_nextcloud
-readarr
-nextcloud
-Ombi
-binhex-qbittorrentvpn
-prowlarr
-Nginx-Proxy-Manager-Official
-binhex-krusader
-lidarr
-radarr
-binhex-emby
-sonarr
-binhex-delugevpn
-jellyseerr
-```
