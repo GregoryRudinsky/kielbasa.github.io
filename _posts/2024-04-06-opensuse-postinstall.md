@@ -15,6 +15,7 @@ A few steps I take after a clean installation of OpenSuse Tumbleweed.
 Add Community Repositories - Entire `packman` Repository 
 - https://en.opensuse.org/Additional_package_repositories
 - https://en.opensuse.org/Portal:Tumbleweed
+
 ```zsh
 zypper ar -cfp 90 http://ftp.gwdg.de/pub/linux/misc/packman/suse/\
 openSUSE_Tumbleweed/ packman
@@ -39,6 +40,7 @@ sudo zypper in opi && opi codecs
 ```
 
 Install [flatpak](https://flatpak.org/setup/openSUSE) `flathub repo` `flatseal`
+
 ```bash
 sudo zypper install flatpak
 
@@ -50,30 +52,33 @@ flatpak install flathub com.github.tchx84.Flatseal
 ## `zsh` and OHMYZSH
 
 Install `git`
+
 ```zsh
 sudo zypper install git
 ```
 
 Install `OHMYZSH`
+
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
-	OHMYZSH Docs
+OHMYZSH Docs
 - https://github.com/ohmyzsh/ohmyzsh/wiki
 - https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
 Install Nerd Fonts
-    https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#meslo-nerd-font-patched-for-powerlevel10k
-    - Download and install the 4 Nerd Fonts...
-    - `Restart/Logout` 
+- https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#meslo-nerd-font-patched-for-powerlevel10k
+- Download and install the 4 Nerd Fonts...
+- `Restart/Logout` 
 
 Theme [Powerlevel10k] (https://github.com/romkatv/powerlevel10k)
 - [Manual Install](https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#manual)
-	Clone Repo
+	
+Clone Repo
 
 ```bash
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-    ```
+```
 
 - Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`
     - Restart Terminal
