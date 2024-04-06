@@ -99,7 +99,8 @@ Enable KDE `Dark Mode`
 Krunner Customization
 - To increase size of `krunner`, add the following lines to `~/.config/krunnerrc`. 
 	- If data is present, overwrite it. 
-```
+
+```bash
 [General]
 FreeFloating=true
 font=Noto Sans,12,-1,5,50,0,0,0,0,0
