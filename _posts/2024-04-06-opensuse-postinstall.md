@@ -4,9 +4,10 @@ date: 2024-04-06 00:55:00 +0500 # date-time-offset est
 categories: [documentation, opensuse]
 tags: [setup, zsh, distrohopping]
 ---
-# Things to do after installing OpenSuse Tumbleweed
+# OpenSUSE Tumbleweed Post Install TODO
 
-A few steps I take after a clean installation of OpenSuse Tumbleweed. 
+A few steps I take after a clean installation of OpenSuse Tumbleweed. My heart lives with Nobara Linux. But, for a few low spec devices, I prefer OpenSUSE. 
+
 > WIP - Trust but verify. 
 
 
@@ -28,12 +29,12 @@ Update
 sudo zypper dup
 ```
 
-```bash
+```zsh
 sudo zypper ref && sudo zypper update
 ```
 
 [Install  - Codecs](https://en.opensuse.org/SDB:Installing_codecs_from_Packman_repositories) `OPI`
-```bash
+```zsh
 sudo zypper install opi
 
 sudo zypper in opi && opi codecs
@@ -41,7 +42,7 @@ sudo zypper in opi && opi codecs
 
 Install [flatpak](https://flatpak.org/setup/openSUSE) `flathub repo` `flatseal`
 
-```bash
+```zsh
 sudo zypper install flatpak
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
@@ -57,12 +58,45 @@ Install `git`
 sudo zypper install git
 ```
 
-Install `OHMYZSH`
 
-```bash
+## System Tunables
+
+Change Hostname
+```zsh
+sudo hostnamectl set-hostname opensuse
+```
+- Restart Terminal and enter `hostname`
+
+Disable GRUB Delay
+-  Yast → Boot Loader → Bootloader Options → Set timeout to 0 → OK
+
+## KDE 
+
+Change KDE Task Switcher
+- _System Settings → Window Management → Task Switcher → Select large icons (without selected window) → Apply_
+
+Enable KDE `Dark Mode`
+- *System Settings → Appearance & Style → Colors & Themes
+
+Krunner Customization
+- To increase size of `krunner`, add the following lines to `~/.config/krunnerrc`. 
+	- If data is present, overwrite it. 
+
+```
+[General]
+FreeFloating=true
+font=Noto Sans,12,-1,5,50,0,0,0,0,0
+
+[PlasmaRunnerManager]
+migrated=false
+```
+ 
+## `OHMYZSH`
+
+```zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
-OHMYZSH Docs
+`OHMYZSH` Docs
 - https://github.com/ohmyzsh/ohmyzsh/wiki
 - https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
@@ -76,7 +110,7 @@ Theme [Powerlevel10k] (https://github.com/romkatv/powerlevel10k)
 	
 Clone Repo
 
-```bash
+```zsh
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
@@ -84,15 +118,15 @@ Clone Repo
     - Restart Terminal
     - `p10k configure` to manully run config
 
-#### ZSH Plugins
+### ZSH Plugins
 `zsh-syntax-highlighting`
 - https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
 
-# KDE Info 
+ ___
 
-Change KDE Task Switcher
-- _System Settings → Window Management → Task Switcher → Select large icons (without selected window) → Apply_
 
+<<<<<<< HEAD
+=======
 Enable KDE `Dark Mode`
 - *System Settings → Appearance & Style → Colors & Themes
 
@@ -109,35 +143,24 @@ font=Noto Sans,12,-1,5,50,0,0,0,0,0
 migrated=false
 ```
  
+>>>>>>> 248e67e978f4fda0619dd841d8642a65eddb4891
 ## Zypper Syntax
 
-```bash
+```zsh
 sudo zypper install package-name
 ```
 
-```bash
+```zsh
 sudo zypper update
 ```
 
-```bash
+```zsh
 zypper search package-name
 ```
 
-```bash
+```zsh
 sudo zypper remove package-name
 ```
-
-## System Tunables
-
-Change Hostname
-```zsh
-sudo hostnamectl set-hostname opensuse
-```
-- Restart Terminal and enter `hostname`
-
-Disable GRUB Delay
--  Yast → Boot Loader → Bootloader Options → Set timeout to 0 → OK
-
 
 ## Networkish
 Tailscale
@@ -147,6 +170,7 @@ To view LAN:
 `sudo tailscale up --accept-routes --operator=$USER`
 
 KTailctl - GUI Tailscale Manager
+
 ```zsh
 flatpak install flathub org.fkoehler.KTailctl
 ```
@@ -185,4 +209,4 @@ Things to do after installing OpenSuse
 LinuxCast
 - https://youtu.be/KW7hzWehuDo
 PragmaticLinux
-https://www.pragmaticlinux.com/2021/06/5-things-to-do-after-installing-opensuse-tumbleweed/
+- https://www.pragmaticlinux.com/2021/06/5-things-to-do-after-installing-opensuse-tumbleweed/
