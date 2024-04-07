@@ -54,16 +54,6 @@ flatpak install flathub com.github.tchx84.Flatseal
 
    
 
-## `zsh` and OHMYZSH
-
-Install `git`
-
-```zsh
-sudo zypper install git
-```
-
-   
-
 ## System Tunables
 
 Change Hostname
@@ -100,7 +90,13 @@ migrated=false
 
    
 
-## `OHMYZSH`
+## `git` `zsh` and `OHMYZSH`
+
+Install `git`
+
+```zsh
+sudo zypper install git
+```
 
 Install `zsh`
 
@@ -114,25 +110,25 @@ Install `OHMYZSH`
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-Install Nerd Fonts
-- https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#meslo-nerd-font-patched-for-powerlevel10k
-- Download and install the 4 Nerd Fonts...
-- `Restart/Logout` 
+- Install Nerd Fonts
+  - https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#meslo-nerd-font-patched-for-powerlevel10k
+  - Download and install the 4 Nerd Fonts...
+  - `Restart/Logout` 
 
-Theme [Powerlevel10k] (https://github.com/romkatv/powerlevel10k)
-- [Manual Install](https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#manual)
-	
-Clone Repo
+- Theme [Powerlevel10k] (https://github.com/romkatv/powerlevel10k)
+  - [Manual Install](https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#manual)	
+  - Clone Repo
 
 ```zsh
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
-- Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`
+  - Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`
     - Restart Terminal
     - `p10k configure` to manully run config
 
 ### ZSH Plugins
+
 `zsh-syntax-highlighting`
 - https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
 
