@@ -42,7 +42,7 @@ sudo zypper install opi
 sudo zypper in opi && opi codecs
 ```
 
-Install [flatpak](https://flatpak.org/setup/openSUSE) `flathub repo` `flatseal`
+Install `flatpak` `flathub repo` `flatseal`
 
 ```zsh
 sudo zypper install flatpak
@@ -52,6 +52,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 flatpak install flathub com.github.tchx84.Flatseal
 ```
 
+- [flatpak](https://flatpak.org/setup/openSUSE)
    
 
 ## System Tunables
@@ -126,12 +127,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
   - Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`
     - Restart Terminal
     - `p10k configure` to manully run config
-
-### ZSH Plugins
-
-`zsh-syntax-highlighting`
-- https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
-
 
 `OHMYZSH` Docs
 - https://github.com/ohmyzsh/ohmyzsh/wiki
