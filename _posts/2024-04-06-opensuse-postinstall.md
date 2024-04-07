@@ -125,8 +125,6 @@ Clone Repo
  ___
 
 
-<<<<<<< HEAD
-=======
 Enable KDE `Dark Mode`
 - *System Settings → Appearance & Style → Colors & Themes
 
@@ -134,7 +132,7 @@ Krunner Customization
 - To increase size of `krunner`, add the following lines to `~/.config/krunnerrc`. 
 	- If data is present, overwrite it. 
 
-```bash
+```zsh
 [General]
 FreeFloating=true
 font=Noto Sans,12,-1,5,50,0,0,0,0,0
@@ -143,7 +141,6 @@ font=Noto Sans,12,-1,5,50,0,0,0,0,0
 migrated=false
 ```
  
->>>>>>> 248e67e978f4fda0619dd841d8642a65eddb4891
 ## Zypper Syntax
 
 ```zsh
