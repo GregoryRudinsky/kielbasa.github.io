@@ -175,6 +175,7 @@ flatpak install flathub org.fkoehler.KTailctl
 
 ## APPs
 > create script to install APPs
+
 ```zsh
 flatpak install flathub md.obsidian.Obsidian
 
