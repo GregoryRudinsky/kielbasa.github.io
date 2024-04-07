@@ -24,6 +24,8 @@ openSUSE_Tumbleweed/ packman
 zypper dup --from packman --allow-vendor-change
 ```
 
+   
+
 Update
 ```zsh
 sudo zypper dup
@@ -50,6 +52,8 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 flatpak install flathub com.github.tchx84.Flatseal
 ```
 
+   
+
 ## `zsh` and OHMYZSH
 
 Install `git`
@@ -58,6 +62,7 @@ Install `git`
 sudo zypper install git
 ```
 
+   
 
 ## System Tunables
 
@@ -69,6 +74,8 @@ sudo hostnamectl set-hostname opensuse
 
 Disable GRUB Delay
 -  Yast → Boot Loader → Bootloader Options → Set timeout to 0 → OK
+
+   
 
 ## KDE 
 
@@ -90,15 +97,22 @@ font=Noto Sans,12,-1,5,50,0,0,0,0,0
 [PlasmaRunnerManager]
 migrated=false
 ```
- 
+
+   
+
 ## `OHMYZSH`
+
+Install `zsh`
+
+```zsh
+sudo zypper install zsh
+```
+
+Install `OHMYZSH`
 
 ```zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
-`OHMYZSH` Docs
-- https://github.com/ohmyzsh/ohmyzsh/wiki
-- https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
 Install Nerd Fonts
 - https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#meslo-nerd-font-patched-for-powerlevel10k
@@ -122,24 +136,12 @@ Clone Repo
 `zsh-syntax-highlighting`
 - https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
 
- ___
+
+`OHMYZSH` Docs
+- https://github.com/ohmyzsh/ohmyzsh/wiki
+- https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
 
-Enable KDE `Dark Mode`
-- *System Settings → Appearance & Style → Colors & Themes
-
-Krunner Customization
-- To increase size of `krunner`, add the following lines to `~/.config/krunnerrc`. 
-	- If data is present, overwrite it. 
-
-```zsh
-[General]
-FreeFloating=true
-font=Noto Sans,12,-1,5,50,0,0,0,0,0
-
-[PlasmaRunnerManager]
-migrated=false
-```
  
 ## Zypper Syntax
 
@@ -159,6 +161,8 @@ zypper search package-name
 sudo zypper remove package-name
 ```
 
+   
+
 ## Networkish
 Tailscale
 https://tailscale.com/kb/1047/install-opensuse-tumbleweed
@@ -175,6 +179,8 @@ flatpak install flathub org.fkoehler.KTailctl
 	- https://flathub.org/apps/org.fkoehler.KTailctl
 - Github
 	- https://github.com/f-koehler/KTailctl
+
+   
 
 ## APPs
 > create script to install APPs
@@ -200,10 +206,15 @@ Visual Studio Code
 1. Backup `Konsole` dot files
 2. 
 
+---
+
 ##### References
+
 Things to do after installing OpenSuse
 - https://averagelinuxuser.com/after-installing-opensuse/
+
 LinuxCast
 - https://youtu.be/KW7hzWehuDo
+
 PragmaticLinux
 - https://www.pragmaticlinux.com/2021/06/5-things-to-do-after-installing-opensuse-tumbleweed/
