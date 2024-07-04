@@ -22,9 +22,9 @@ To view the `Errors`:
 ![](/assets/posts/2024-01/01-23-24/1-23-24_nc-error-notfoundexception-pre.png)
 
 ### Solution
-1. Reindex files for `User` (optional)
+1. Reindex files for `User`
 ```bash
-root@Ashla-234:/# docker exec -it nextcloud occ files:scan --all
+docker exec -it nextcloud occ files:scan --all
 ```
 
 2. Add missing indices
